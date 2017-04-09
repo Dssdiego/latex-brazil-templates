@@ -1,0 +1,54 @@
+% Classe
+\documentclass[]{abntex2}
+
+% Pacotes
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+% "Variáveis"
+\renewcommand{\titulo}{Titulo}
+\newcommand{\subt}{Subtítulo}
+\renewcommand{\autor}{Seu Nome Aqui}
+\newcommand{\matricula}{1234567890}
+\newcommand{\professor}{Nome do Prof.}
+
+% Documento
+\begin{document}
+
+\vspace*{0,75cm}
+
+\begingroup
+\fontsize{100pt}{12pt}\selectfont
+	\begin{center}
+		\titulo
+		
+		\vspace*{2cm}
+		
+		\subt
+	\end{center}
+\endgroup
+
+\vspace*{1cm}
+
+\begin{center}
+	{\huge Professor: \professor}
+\end{center}
+
+\vspace*{8cm}
+
+\begin{flushright}
+	{\huge \autor} 
+	
+	\vspace*{0,25cm}
+	
+	{\huge \matricula}
+\end{flushright}
+
+\vspace*{\fill}
+
+\begin{center}
+	{\huge \today} 
+\end{center}
+
+
+\end{document}
